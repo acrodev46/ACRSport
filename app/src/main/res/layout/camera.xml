@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_runner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero Equipe :"
+        android:id="@+id/tv_numeroEquipeCamera"
+        android:layout_above="@+id/et_numeroPhoto"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_numeroPhoto"
+
+        android:textAlignment="center"
+        android:layout_above="@+id/b_camera"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="camera"
+        android:id="@+id/b_camera"
+        android:layout_alignTop="@+id/b_upload"
+        android:layout_alignRight="@+id/et_numeroPhoto"
+        android:layout_alignEnd="@+id/et_numeroPhoto" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/b_upload"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/et_numeroPhoto"
+        android:layout_alignStart="@+id/et_numeroPhoto"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
